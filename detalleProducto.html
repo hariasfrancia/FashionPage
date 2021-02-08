@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="carrusel.html">Fashion</a>
           <button
@@ -24,7 +24,8 @@
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -66,7 +67,7 @@
                 <a class="nav-link" href="#">Contactenos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="detalleProducto.html" target="_blank"><i class="bi bi-cart3"></i></a>
+                <a class="nav-link" href="detalleProducto.html"><i class="bi bi-cart3"></i></a>
               </li>
             </ul>
             <form class="d-flex">
@@ -74,7 +75,8 @@
                 class="form-control me-2"
                 type="search"
                 placeholder="Buscar"
-                aria-label="Search"/>
+                aria-label="Search"
+              />
               <button class="btn btn-outline-success" type="submit">
                 Buscar
               </button>
@@ -104,84 +106,78 @@
           <span class="visually-hidden">Next</span>
         </a>
       </div>
+    <!-- ------------------------------------------------------------ -->
+    <main>
+        <!-- Tablas -->
+      <div class="row justify-content-center mt-4">
+        <div class="col-8">
+            <div>
+                <h1>Productos</h1>
+            </div>
+            <div>
+                <button class="btn btn-success">
+                  Seguir comprando
+                </button>
+            </div>
+            <br>
+          <table class="table table-bordered">
+            <thead>
+             <tr>
+               <th>Nombre</th>
+               <th>Código</th>
+               <th>Precio</th>
+               <th>Existencia</th>
+               <th>Editar</th>
+               <th>Eliminar</th>
+             </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>VESTIDOS DE PRIMAVERA</td>
+                <td>1</td>
+                <td>50.0</td>
+                <td>41.0</td>
+                <td><button type="button" class="btn btn-warning">Editar<i class="bi bi-pencil-square"></i></i></button></td>
+                <td><button type="button" class="btn btn-danger">Eliminar<i class="bi bi-trash-fill"></i></i></button></td>
+              </tr>
+              <tr>
+                <td>ZAPATILLAS DEPORTIVAS (VARON)</td>
+                <td>2</td>
+                <td>30.0</td>
+                <td>29.0</td>
+                <td><button type="button" class="btn btn-warning">Editar<i class="bi bi-pencil-square"></i></button></td>
+                <td><button type="button" class="btn btn-danger">Eliminar<i class="bi bi-trash-fill"></i></button></td>
+              </tr>
+              <tr>
+                <td>ZAPATOS DE VESTIR (DAMA)</td>
+                <td>3</td>
+                <td>20.0</td>
+                <td>99.0</td>
+                <td><button type="button" class="btn btn-warning">Editar<i class="bi bi-pencil-square"></i></button></td>
+                <td><button type="button" class="btn btn-danger">Eliminar<i class="bi bi-trash-fill"></i></button></td>
+              </tr>
+              <tr>
+                <td>ZAPATOS DE VESTIR (VARON)</td>
+                <td>4</td>
+                <td>7.0</td>
+                <td>99.0</td>
+                <td><button type="button" class="btn btn-warning">Editar<i class="bi bi-pencil-square"></i></button></td>
+                <td><button type="button" class="btn btn-danger">Eliminar<i class="bi bi-trash-fill"></i></button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </div>
+    </main>  
+      
 
-      <div class="row my-4">
-        <!-- ------------------------------------------- -->
-        <div class="col-xl-4 col-lg-6 col-sm-12">
-          <div class="card">
-            <div class="card-header text-center">
-              <h4>Zapatillas Deportivas</h4>
-            </div>
-            <img 
-              class="card-img-top"
-              src="https://www.zonadepadel.es/8137-large_default/babolat-pulsa-azules-2020.jpg"
-              alt="front-end imagen"/>
-            <div class="card-body">
-              <p class="card-text">
-                Zapatillas de pádel Babolat Pulsa en color azul | Disfruta de un gran confort con estas zapatillas Babolat para hombre, disponen de sistema de amortiguación para reducir el impacto y tener una pisada suave
-              </p>
-              <div class="d-grid">
-                <button 
-                  class="btn btn-primary">
-                  <i class="bi-info-circle"></i> Solicitar Información
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ------------------------------------------- -->
-        <div class="col-xl-4 col-lg-6 col-sm-12">
-          <div class="card">
-            <div class="card-header text-center">
-              <h4>Zapatos de Vestir para Caballeros</h4>
-            </div>
-            <img 
-              class="card-img-top"
-              src="http://i.ebayimg.com/images/g/o3sAAOSwSudcM3Zw/s-l500.jpg"
-              alt="front-end imagen"/>
-            <div class="card-body">
-              <p class="card-text">
-                Para hombres Cuero Clarks James Cap Formal Zapatos Con Cordones Cuero Clarks Para hombres Cuero Clarks James Cap Formal Zapatos Con Cordones Cuero ClarksPara hombres Cuero Clarks James Cap Formal Zapatos Con Cordones
-              </p>
-              <div class="d-grid">
-                <button 
-                  class="btn btn-primary">
-                  <i class="bi-info-circle"></i> Solicitar Información
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ------------------------------------------- -->
-        <div class="col-xl-4 col-lg-6 col-sm-12">
-          <div class="card">
-            <div class="card-header text-center">
-              <h4>Zapatos de Vestir para Damas</h4>
-            </div>
-            <img 
-              class="card-img-top"
-              src="https://ae01.alicdn.com/kf/HTB1Kl0.QVXXXXamXpXXq6xXFXXX2/Ainido-mujeres-pisos-colores-del-caramelo-rojo-negro-beige-charol-suave-vestido-de-se-oras-de.jpg_640x640.jpg"
-              alt="front-end imagen"/>
-            <div class="card-body">
-              <p class="card-text">
-                Ainido mujeres pisos colores del caramelo rojo negro beige charol suave vestido de señoras de la mujer zapatos de la comodidad suave vestido de señoras de la mujer zapatos
-              </p>
-              <div class="d-grid">
-                <button 
-                  class="btn btn-primary">
-                  <i class="bi-info-circle"></i> Solicitar Información
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>  
-      <!-- footer -->
-      <div class="card-footer bg-light">
+    <!-- footer -->
+    <div class="card-footer bg-light">
         <small class="text-muted">Copyright 2021 Mundo Fashión | Todos los Derechos Reservados <i class="bi bi-shop-window"></i><font color="black"> FASHION</font></small>
       </div>
-
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
