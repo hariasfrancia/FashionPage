@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ecommerce Mundo Fashion </title>
+
+    <!--enlace bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> <!--iconos copiados de pg boostrap-->
+
+    
+</head>
+
+<body>
+<!-- NAVBAR barra de navegación--> 
+<div class="padre">
+  <header class="header">
+    <div class="menu">
+      <div class="logo"> </div>
+      <div class="nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!--carrito de compras-->
+      <a class="navbar-brand" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+      </svg> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+
+            <!--Home-->
+            <a class="nav-link active" aria-current="page" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+              <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+            </svg> Inicio </a>
+          </li>
+          <li class="nav-item">
+
+            <!--Contáctanos -->
+            <a class="nav-link" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+            </svg> Contáctanos </a>
+          </li>
+
+          <!--Galería de productos-->
+          <li class="galeria">
+            <a class="nav-link galeria-toggle" href="#" id="navbarGaleria" role="button" data-bs-toggle="galeria" aria-expanded="false"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+              <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+              <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+            </svg> Galería </a>
+            <ul class="galeria-menu" aria-labelledby="navbaGaleria">
+              <!-- acciones de desplegable -->
+              <li><a class="galeria-item" href="#"> moda 2021 damas </a></li>
+              <li><a class="galeria-item" href="#"> moda 2021 varones </a></li>
+              <li><a class="galeria-item" href="#"> moda 2021 niños </a></li>                  
+              <hr/>
+              <li><a class="galeria-item" href="#"> Accesorios </a></li>
+            </ul>
+          </li>
+
+          <!--conoce más de nosotros-->
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" > Conoce más de nosotros <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                </svg> <!--instagram--> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg> <!--facebook--> </a>
+              </li>
+            </ul>
+
+        <div class="social"> 
+          <!--conoce más de nosotros-->
+          <li class="nav">
+            <a class="nav-conoce mas de nosotros disabled" href="#" tabindex="-1" aria-disabled="true"> Conoce más de nosotros <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg> <!--instagram--> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg> <!--facebook--> </a>
+          </li>
+        </ul>      
+        <br>
+        <!--shearch -->            
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+        </div>     
+        </div>  
+                
+      <!-- Contenedor -->
+      <div class="container">
+          <div class="row">
+              <header class="text-center">
+                 
+                      <img src="Imagenes/tiendaonline-logo (1).png" height="100px 100px 100px">
+
+                      <h3 class="display-4"> 
+                    
+                    <p class="lead"> <!--lead estiliza el parrafo-->
+                        Te traemos las novedades que tanto esperas para la temporada.. luce bien en todo momento!!
+                    </p>
+                  </h3>
+              </header>
+
+          </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Imagenes/b38073d4bb98bfbe7c56d4541283865d.jpg" class="d-block w-100" alt="next">
+              </div>
+              <div class="carousel-item">
+                <img src="Imagenes/maxresdefault.jpg" class="d-block w-100" alt="next">
+              </div>
+              <div class="carousel-item">
+                <img src="Imagenes/tendencia-de-moda-niños-verano-2021.jpg" class="d-block w-100" alt="next">
+              </div>
+            </div>
+          </div>
+
+          <!-- Cards-->
+          <section class="row my-4"> <!--my margen arriba y abajo en vertical-->
+              <div class="col-xl-4 col-lg-6 col-sm-12">
+                  <div class="card"> <!--articulos-->
+                      <div class="card-header" align-center>
+                          Conoce nuestros productos!! <!--texto elegido-->
+                      </div>
+                      <!--1era imagen-->
+                      <img class="card-img-top" src="Imagenes/inferior 1.jpg"            alt="front-end imagen"/> <!--article-->
+                      <div clas="card-body">
+                          <p class="text"> Novedades para los más pequeños </p>
+                          <div class="d-grid">
+                              <button class="btn btn-primary">
+                                  <i class="bi-info-circle"> </i>
+                                  Ver los modelos
+                              </button>
+                              <!--2da imagen-->
+                              <img class="card-img-top" src="Imagenes/inferior 2.jpg"
+                      alt="front-end imagen"/>
+                      <div clas="card-body">
+                          <p class="text">
+                              Novedades para Damas
+                          </p>
+                          <div class="d-grid">
+                              <button class="btn btn-primary">
+                                  <i class="bi-info-circle"> </i>
+                                  Ver los modelos
+                              </button>
+                              <!--3era imagen varones-->
+                              <img class="card-img-top" src="Imagenes/inferior 3.png"
+                      alt="front-end imagen"/>
+                      <div clas="card-body">
+                          <p class="text">
+                              Novedades para Varones
+                          </p>
+                          <div class="d-grid">
+                              <button class="btn btn-primary">
+                                  <i class="bi-info-circle"> </i>
+                                  Ver los modelos
+                              </button>
+                              <!--4ta imagen Accesorios-->
+                              <img class="card-img-top" src="Imagenes/inferior 4.jpg"
+                      alt="front-end imagen"/>
+                      <div clas="card-body">
+                          <p class="text">
+                              Accesorios
+                          </p>
+                          <div class="d-grid">
+                              <button class="btn btn-primary">
+                                  <i class="bi-info-circle"> </i>
+                                  Ver los modelos
+                                  </button>
+                                  <!-- 5ta imagen Calzado-->
+                                  <img class="card-img-top" src="Imagenes/inferior 5.jpg"
+                      alt="front-end imagen"/>
+                      <div clas="card-body">
+                          <p class="text">
+                              Calzado
+                          </p>
+                          <div class="d-grid">
+                              <button class="btn btn-primary">
+                                  <i class="bi-info-circle"> </i>
+                                  Ver los modelos
+                                  </button>
+                                  <!--6ta imagen Abrigos-->
+                                  <img class="card-img-top" src="Imagenes/imagen 5 casacas.jfif" alt="front-end imagen"/>
+                      <div clas="card-body">
+                          <p class="text">
+                              Abrigos
+                          </p>
+                          <div class="d-grid">
+                              <button class="btn btn-primary">
+                                  <i class="bi-info-circle"> </i>
+                                  Ver los modelos
+                                  </button>
+                                  <br>
+                                  <nav class="navegacion"> Páginas
+                                    </nav>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+                    </div>
+                </div>
+            </div>            
+          </section>
+          <footer class="footer"> 
+            <nav class="pie"> </nav>
+          </footer>
+      </div>
+
+
+      <!--enlace bootstrap js-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+      </script>
+
+</body>
+</html>
